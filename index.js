@@ -14,7 +14,7 @@ const corsOptions = {
   };
 app.use(cors(corsOptions))
 
-app.post('/user', (request, response) => {
+app.get('/user', (request, response) => {
     const { body } = request
     console.log('body recive from 5000', body)
     console.log('Gaetting data from user api')
